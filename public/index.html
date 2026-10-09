@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — Test Prep Training</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Register for test prep training</h1>
+    <p class="subtitle">Choose a track and start learning.</p>
+
+    <form id="register-form">
+      <label for="full_name">Full name</label>
+      <input type="text" id="full_name" name="full_name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="track_id">Choose your track</label>
+      <select id="track_id" name="track_id" required>
+        <option value="" disabled selected>Loading tracks…</option>
+      </select>
+
+      <button type="submit">Register</button>
+      <p id="form-error" class="error" hidden></p>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
